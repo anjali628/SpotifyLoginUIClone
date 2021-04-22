@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Email or Username"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:id="@+id/mailtextview">
+
+
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mailtextview"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/edittextbg"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:id="@+id/mail_edit_text"
+        >
+
+    </EditText>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="45dp"
+        android:text="Password"
+        android:layout_below="@id/mail_edit_text"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:id="@+id/passwordtextview">
+
+
+    </TextView>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordlayout"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16sp"
+        android:layout_below="@id/passwordtextview">
+
+
+        <EditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:background="@drawable/edittextbg"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white">
+
+        </EditText>
+
+        <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_visibility_24"
+            android:background="@android:color/transparent"
+            android:tint="@color/white"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/passwordtoggle"
+        >
+
+    </ImageButton>
+
+    </RelativeLayout>
+
+    <android.widget.Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/logindisabled"
+
+        android:text="Log In"
+        android:textSize="16sp"
+        android:textColor="#FF333333"
+        android:clickable="false"
+        android:enabled="false"
+        android:textStyle="bold"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:id="@+id/loginbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/passwordlayout"
+        android:layout_marginTop="40dp"
+        >
+
+    </android.widget.Button>
+
+    <android.widget.Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Log In Without Password"
+        android:textSize="11sp"
+
+        android:textStyle="bold"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:letterSpacing="0.2"
+        android:textColor="@color/white"
+        android:background="@drawable/loginwithoutpasswordbg"
+
+        android:id="@+id/loginwithoutbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loginbtn"
+        android:layout_marginTop="35dp"
+        >
+
+    </android.widget.Button>
+
+
+</RelativeLayout>
